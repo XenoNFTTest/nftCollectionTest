@@ -235,6 +235,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #da2d2d;
 }
 
 .info-container {
