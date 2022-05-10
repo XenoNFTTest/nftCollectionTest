@@ -1,7 +1,7 @@
 const contractAddress = "0x2078d4520E5690d3dcbfF975ac52ba7D5b6bC8a3"; //Replace with your own contract address
 const chain = 'rinkeby'; // rinkeby or polygon
 
-const welcome_h1 = "Welcome to the SCOOPX NFT Project!!";
+const welcome_h1 = "Welcome to the SCOOPX NFT Collection!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
 const welcome_p = 'The SCOOPX NFT Project is the first SCOPX NFT Collection. Come get your own SCOPX NFT!!';
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
