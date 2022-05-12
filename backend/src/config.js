@@ -7,9 +7,9 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "NFTFINALTEST";
-const description = "This is a unknwon warrior man from an unknwon land (for final test)";
-const baseUri = ""; // This will be replaced automatically
+const namePrefix = "FINAL NFT TEST";
+const description = "This is a unknwon warrior man from an unknwon land (for final test(finale))";
+const baseUri = "ipfs://bafybeibe7hrusyy35oushj7x6iejxtfu5vfj7l5fqf4phk5vbfri5ofkt4/"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
@@ -49,8 +49,8 @@ const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'WARRIORFINALTEST';
-const CONTRACT_SYMBOL = 'NFTEE';
+const CONTRACT_NAME = 'WARRIOR FINAL NFT TEST';
+const CONTRACT_SYMBOL = 'FINALTEST';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x2884a2c0c4b35F9E652f3373527cddA1Fd11786E';
 const TREASURY_ADDRESS = '0x2884a2c0c4b35F9E652f3373527cddA1Fd11786E';
@@ -65,12 +65,12 @@ const PUBLIC_MINT_START_DATE = "2025-09-20T11:30:48+00:00"; // This is required.
 const PRESALE_MINT_START_DATE = "2019-03-20T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x2884a2c0c4b35F9E652f3373527cddA1Fd11786E"; // Address that will receive the royalty
-const BASE_URI = "ipfs://bafybeifdvoluj4fnduprw4vpilfyexqqvdzalwv27b6euaox4632mrzvti/"; // only update if you want to manually set the base uri
+const BASE_URI = "ipfs://bafybeibe7hrusyy35oushj7x6iejxtfu5vfj7l5fqf4phk5vbfri5ofkt4/"; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = "https://ipfs.io/ipfs/bafkreihfyz7a3my7xpnvfxwtil5l7seusdmj3tk75tvxobs3e5opdmbnmi"; // only update if you want to manually set the prereveal token uri
 const PRESALE_WHITELISTED_ADDRESSES = ["0x2884a2c0c4b35F9E652f3373527cddA1Fd11786E"]; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
-let CONTRACT_ADDRESS = "0x2078d4520E5690d3dcbfF975ac52ba7D5b6bC8a3"; // If you want to manually include it
+let CONTRACT_ADDRESS = "0x30f1de42f3a6230Ce9F349b6Ed7cA44399fCB42A"; // If you want to manually include it
 
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
