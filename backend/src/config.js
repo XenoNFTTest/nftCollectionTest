@@ -49,31 +49,31 @@ const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'WARRIOR FINAL NFT TEST';
-const CONTRACT_SYMBOL = 'FINALTEST';
+const CONTRACT_NAME = 'WARRIOR RAITY TEST';
+const CONTRACT_SYMBOL = 'WRWD';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x2884a2c0c4b35F9E652f3373527cddA1Fd11786E';
 const TREASURY_ADDRESS = '0x2884a2c0c4b35F9E652f3373527cddA1Fd11786E';
 const MAX_SUPPLY = 1000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 0.000001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
-const TOKENS_PER_MINT = 100; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
+const MINT_PRICE = 0.00000001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const TOKENS_PER_MINT = 150; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2025-09-20T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2020-09-20T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = "2019-03-20T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 1000; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x2884a2c0c4b35F9E652f3373527cddA1Fd11786E"; // Address that will receive the royalty
-const BASE_URI = "ipfs://bafybeibe7hrusyy35oushj7x6iejxtfu5vfj7l5fqf4phk5vbfri5ofkt4/"; // only update if you want to manually set the base uri
+const BASE_URI = "ipfs://bafybeic4dtvxvhjnp633x5wzboegmgq5kyg4imunusuw5lruu2kmxri7ai/"; // only update if you want to manually set the base uri
 const PREREVEAL_TOKEN_URI = "https://ipfs.io/ipfs/bafkreihfyz7a3my7xpnvfxwtil5l7seusdmj3tk75tvxobs3e5opdmbnmi"; // only update if you want to manually set the prereveal token uri
 const PRESALE_WHITELISTED_ADDRESSES = ["0x2884a2c0c4b35F9E652f3373527cddA1Fd11786E","0x4a8E1195D8009Ee082578C7e98DD8C422e281c7C"]; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
-let CONTRACT_ADDRESS = "0x30f1de42f3a6230Ce9F349b6Ed7cA44399fCB42A"; // If you want to manually include it
+let CONTRACT_ADDRESS = "0x30f1de42f3a6230ce9f349b6ed7ca44399fcb42a"; // If you want to manually include it
 
 // Generic Metadata is optional if you want to reveal your NFTs
-const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
+const GENERIC = false; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
 const GENERIC_DESCRIPTION = "Your generic question unkown warrior"; // Replace with what you want the generic descriptions to say.
 const GENERIC_IMAGE = "https://ipfs.io/ipfs/bafkreihfyz7a3my7xpnvfxwtil5l7seusdmj3tk75tvxobs3e5opdmbnmi"; // Replace with your generic image that will display for all NFTs pre-reveal.
