@@ -102,12 +102,6 @@ const updateConnectStatus = async () => {
           window.contract = new web3.eth.Contract(abi, contractAddress);
           alert("I am an alert box!15");
           loadInfo();
-          const NameContract = web3.eth.Contract(contract_abi, contract_address);
-          const api = NameContract.methods.currentSupply().call();
-          const api2 = await contract.methods.presaleActive().call();
-          alert(contractAddress);
-          alert(api);
-          alert(api2);
         });
     };
   }
@@ -168,7 +162,7 @@ async function checkChain() {
 
 async function loadInfo() {
   alert("I am an alert box!3");
-  window.info = await window.contract.methods.getInfo().call();
+  window.info = await window.contract.methods._baseURI().call();
   alert(window.info);
   const publicMintActive = await contract.methods.mintingActive().call();
   alert(publicMintActive);
