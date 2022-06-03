@@ -178,7 +178,7 @@ async function loadInfo() {
     mintButton.innerText = button_public_mint;
     mintContainer.classList.remove('hidden');
     setTotalPrice();
-  } else if (presaleMintActive) {
+  }/* else if (presaleMintActive) {
     startTime = window.info.runtimeConfig.publicMintStart;
     mainHeading.innerText = h1_presale_mint;
     subHeading.innerText = h2_presale_mint;
@@ -203,7 +203,7 @@ async function loadInfo() {
       // console.log(e);
       mainText.innerText = p_presale_mint_already_minted;
       actionButton.innerText = button_presale_already_minted;
-    }*/
+    }
     setTotalPrice();
   } else {
     startTime = window.info.runtimeConfig.presaleMintStart;
@@ -211,20 +211,22 @@ async function loadInfo() {
     subHeading.innerText = h2_presale_coming_soon;
     mainText.innerText = p_presale_coming_soon;
     actionButton.innerText = button_presale_coming_soon;
-  }
+  }*/
 
+  /*
   const clockdiv = document.getElementById("countdown");
   clockdiv.setAttribute("data-date", startTime);
-  countdown();
+  countdown();*/
 
   // HIDE SPINNER
   spinner.classList.add('hidden');
 
   // SHOW CARD
+  /*
   setTimeout(() => {
     const countdownCard = document.querySelector('.countdown');
     countdownCard.classList.add('show-card');
-  }, 1000);
+  }, 1000);*/
 
   let priceType = '';
   if(chain === 'rinkeby') {
