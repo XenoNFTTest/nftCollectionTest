@@ -104,8 +104,10 @@ const updateConnectStatus = async () => {
           loadInfo();
           const NameContract = web3.eth.Contract(contract_abi, contract_address);
           const api = NameContract.methods.currentSupply().call();
+          const api2 = await contract.methods.presaleActive().call();
           alert(contractAddress);
           alert(api);
+          alert(api2);
         });
     };
   }
