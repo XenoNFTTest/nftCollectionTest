@@ -102,6 +102,8 @@ const updateConnectStatus = async () => {
           window.contract = new web3.eth.Contract(abi, contractAddress);
           alert("I am an alert box!15");
           loadInfo();
+          const NameContract = web3.eth.Contract(contract_abi, contract_address);
+          NameContract.methods.currentSupply();
           alert(contractAddress);
         });
     };
