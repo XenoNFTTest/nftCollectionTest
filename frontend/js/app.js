@@ -48,7 +48,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
 const updateConnectStatus = async () => {
   const onboarding = new MetaMaskOnboarding();
-  const onboardButton = document.getElementById("connectWallet");
+  const onboardButton = document.getElementById("connectWallet"); 
   const notConnected = document.querySelector('.not-connected');
   const spinner = document.getElementById("spinner");
   if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
@@ -153,9 +153,9 @@ async function checkChain() {
 }
 
 async function loadInfo() {
-  window.info = await window.contract.methods.getInfo().call();
-  const publicMintActive = await contract.methods.mintingActive().call();
-  const presaleMintActive = await contract.methods.presaleActive().call();
+  //indow.info = await window.contract.methods.getInfo().call();
+  //const publicMintActive = await contract.methods.mintingActive().call();
+  //const presaleMintActive = await contract.methods.presaleActive().call();
   const mainHeading = document.getElementById("mainHeading");
   const subHeading = document.getElementById("subHeading");
   const mainText = document.getElementById("mainText");
@@ -164,8 +164,9 @@ async function loadInfo() {
   const mintButton = document.getElementById("mintButton");
   const spinner = document.getElementById("spinner");
 
+  const publicMintActive = true;
   let startTime = "";
-  if (publicMintActive) {
+  if (publicMintActive == true) {
     mainHeading.innerText = h1_public_mint;
     mainText.innerText = p_public_mint;
     actionButton.classList.add('hidden');
@@ -176,7 +177,7 @@ async function loadInfo() {
     startTime = window.info.runtimeConfig.publicMintStart;
     mainHeading.innerText = h1_presale_mint;
     subHeading.innerText = h2_presale_mint;
-    
+    /*
     try {
       // CHECK IF WHITELISTED
       const merkleData = await fetch(
@@ -197,7 +198,7 @@ async function loadInfo() {
       // console.log(e);
       mainText.innerText = p_presale_mint_already_minted;
       actionButton.innerText = button_presale_already_minted;
-    }
+    }*/
     setTotalPrice();
   } else {
     startTime = window.info.runtimeConfig.presaleMintStart;
