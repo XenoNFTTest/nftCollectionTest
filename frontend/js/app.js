@@ -103,6 +103,7 @@ const updateConnectStatus = async () => {
           alert("I am an alert box!15");
           loadInfo();
           alert(contractAddress);
+          alert(contract.currentSupply);
         });
     };
   }
