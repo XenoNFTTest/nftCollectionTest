@@ -41,6 +41,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   if (MetaMaskOnboarding.isMetaMaskInstalled()) {
     window.ethereum.on("accountsChanged", (newAccounts) => {
       accounts = newAccounts;
+      alert(accounts);
       updateConnectStatus();
     });
   }
@@ -351,7 +352,6 @@ async function mint() {
       console.log(e);
     }
   } else if (presaleMintActive) {
-    // PRE-SALE MINTING
     try {
       const merkleData = await fetch(
         `/.netlify/functions/merkleProof/?wallet=${window.address}&chain=${chain}&contract=${contractAddress}`
