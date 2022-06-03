@@ -53,6 +53,7 @@ const updateConnectStatus = async () => {
   const notConnected = document.querySelector('.not-connected');
   const spinner = document.getElementById("spinner");
   if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
+    alert("I am an alert box11!");
     onboardButton.innerText = "Install MetaMask!";
     onboardButton.onclick = () => {
       onboardButton.innerText = "Connecting...";
@@ -64,6 +65,7 @@ const updateConnectStatus = async () => {
       notConnected.classList.add('show-not-connected');
     };
   } else if (accounts && accounts.length > 0) {
+    alert("I am an alert box12!");
     onboardButton.innerText = `✔ ...${accounts[0].slice(-4)}`;
     window.address = accounts[0];
     onboardButton.disabled = true;
@@ -73,8 +75,11 @@ const updateConnectStatus = async () => {
     // SHOW SPINNER
     spinner.classList.remove('hidden');
     window.contract = new web3.eth.Contract(abi, contractAddress);
+    alert("I am an alert box!33");
     loadInfo();
+    alert(contractAddress);
   } else {
+    alert("I am an alert box14!");
     onboardButton.innerText = "Connect MetaMask!";
     // HIDE SPINNER
     spinner.classList.add('hidden');
@@ -95,7 +100,9 @@ const updateConnectStatus = async () => {
           window.address = accts[0];
           accounts = accts;
           window.contract = new web3.eth.Contract(abi, contractAddress);
+          alert("I am an alert box!15");
           loadInfo();
+          alert(contractAddress);
         });
     };
   }
