@@ -47,6 +47,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 });
 
 const updateConnectStatus = async () => {
+  alert("I am an alert box1");
   const onboarding = new MetaMaskOnboarding();
   const onboardButton = document.getElementById("connectWallet"); 
   const notConnected = document.querySelector('.not-connected');
@@ -101,6 +102,7 @@ const updateConnectStatus = async () => {
 };
 
 async function checkChain() {
+  alert("I am an alert box2");
   let chainId = 0;
   if(chain === 'rinkeby') {
     chainId = 4;
@@ -153,6 +155,7 @@ async function checkChain() {
 }
 
 async function loadInfo() {
+  alert("I am an alert box!3");
   //indow.info = await window.contract.methods.getInfo().call();
   //const publicMintActive = await contract.methods.mintingActive().call();
   //const presaleMintActive = await contract.methods.presaleActive().call();
@@ -274,6 +277,7 @@ async function loadInfo() {
 }
 
 function setTotalPrice() {
+  alert("I am an alert box!4");
   const mintInput = document.getElementById("mintInput");
   const mintInputValue = parseInt(mintInput.value);
   const totalPrice = document.getElementById("totalPrice");
