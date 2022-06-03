@@ -163,9 +163,12 @@ async function checkChain() {
 
 async function loadInfo() {
   alert("I am an alert box!3");
-  //indow.info = await window.contract.methods.getInfo().call();
-  //const publicMintActive = await contract.methods.mintingActive().call();
-  //const presaleMintActive = await contract.methods.presaleActive().call();
+  window.info = await window.contract.methods.getInfo().call();
+  alert(window.info);
+  const publicMintActive = await contract.methods.mintingActive().call();
+  alert(publicMintActive);
+  const presaleMintActive = await contract.methods.presaleActive().call();
+  alert(presaleMintActive);
   const mainHeading = document.getElementById("mainHeading");
   const subHeading = document.getElementById("subHeading");
   const mainText = document.getElementById("mainText");
@@ -174,7 +177,6 @@ async function loadInfo() {
   const mintButton = document.getElementById("mintButton");
   const spinner = document.getElementById("spinner");
 
-  const publicMintActive = true;
   let startTime = "";
   if (publicMintActive == true) {
     mainHeading.innerText = h1_public_mint;
